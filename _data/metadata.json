@@ -1,0 +1,16 @@
+{
+  "title": "Refresh'd",
+  "url": "https://refreshd.net/",
+  "description": "I am front-end developer at VivifyIdeas, teacher at VivifyAcademy, occasional wrangler of words and remote worker.",
+  "feed": {
+    "subtitle": "I am front-end developer at VivifyIdeas, teacher at VivifyAcademy, occasional wrangler of words and remote worker.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://refreshd.net/feed/feed.xml",
+    "id": "https://refreshd.net/"
+  },
+  "author": {
+    "name": "Zoran Zlokapa",
+    "email": "z.zoran@gmail.com"
+  }
+}

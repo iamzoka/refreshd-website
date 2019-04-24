@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<header class="rf-c-page-header">
+    <h1 class="rf-c-page-title">
+        {{ title }}
+    </h1>
+
+    <p class="rf-c-post__desc">
+        {{ description }}
+    </p>
+
+    <p>
+        <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+    </p>
+</header>
+
+<main class="rf-u-container">
+    {{ content | safe }}
+</main>

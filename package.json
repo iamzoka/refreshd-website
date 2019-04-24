@@ -1,0 +1,35 @@
+{
+  "name": "refreshd-website",
+  "version": "1.0.0",
+  "description": "Home of Zoran Zlokapa",
+  "scripts": {
+    "build-task:scss-compile": "node-sass --source-map true src/scss/ -o css",
+    "build-task:autoprefixer": "postcss _site/css/*.css --use autoprefixer -d _site/css",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy",
+    "dev": "npm-run-all -p sass:* watch",
+    "build": "npx eleventy"
+  },
+  "author": {
+    "name": "Zoran Zlokapa",
+    "email": "z.zoran@gmail.com",
+    "url": "https://refreshd.net/"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.4.10",
+    "chokidar-cli": "^1.2.2",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "@11ty/eleventy": "^0.8.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.1",
+    "luxon": "^1.12.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.0.2"
+  }
+}
