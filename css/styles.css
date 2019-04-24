@@ -3,6 +3,7 @@
   --color-white-dirty: #f9f9f9;
   --color-black: #000000;
   --color-black-light: #333333;
+  --color-gray: #cccccc;
   --color-yellow-pale: #FFF2AF;
   --font-size-base: 16px;
   --font-size-sm: .75rem;
@@ -152,13 +153,14 @@ a {
   padding: 0;
   list-style-type: none; }
   .rf-c-posts > li {
-    margin-bottom: var(--gutter); }
+    margin-bottom: var(--gutter-lg); }
   .rf-c-posts h1 {
-    margin-bottom: .25em; }
+    margin-bottom: 0; }
+    .rf-c-posts h1 + p {
+      margin-top: 0; }
 
 .rf-c-post__meta {
-  margin: 0;
-  color: var(--color-black-light); }
+  color: var(--color-gray); }
 
 .rf-c-post__desc {
   color: var(--color-black-light); }
@@ -176,6 +178,14 @@ a {
   .rf-c-site-footer a {
     padding: 0 var(--gutter-xs);
     color: var(--color-black-light); }
+
+/*
+ * @name Vendors
+ */
+.rf-c-article pre[class*="language-"] {
+  margin-top: inherit;
+  padding-right: var(--gutter-base);
+  padding-left: var(--gutter-base); }
 
 /*
  * @name Utilities

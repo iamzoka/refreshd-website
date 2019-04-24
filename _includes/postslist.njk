@@ -5,9 +5,6 @@
       <h1>
         <a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
       </h1>
-      <p class="rf-c-post__desc">
-        {{ post.data.description }}
-      </p>
       <p class="rf-c-post__meta">
         <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
         {# {% for tag in post.data.tags %}
@@ -16,6 +13,9 @@
           <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
           {%- endif -%}
         {% endfor %} #}
+      </p>
+      <p class="rf-c-post__desc">
+        {{ post.data.description }}
       </p>
     </article>
   </li>
