@@ -1,9 +1,10 @@
 {
   "title": "Refresh'd",
+  "tagline": "Zoran Zlokapa, frontend developer and designer",
   "url": "https://refreshd.net/",
-  "description": "I am front-end developer at VivifyIdeas, teacher at VivifyAcademy, occasional wrangler of words and remote worker.",
+  "description": "I am frontend developer at VivifyIdeas, teacher at VivifyAcademy, occasional wrangler of words and remote worker.",
   "feed": {
-    "subtitle": "I am front-end developer at VivifyIdeas, teacher at VivifyAcademy, occasional wrangler of words and remote worker.",
+    "subtitle": "I am frontend developer at VivifyIdeas, teacher at VivifyAcademy, occasional wrangler of words and remote worker.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "url": "https://refreshd.net/feed/feed.xml",
