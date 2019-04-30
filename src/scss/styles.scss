@@ -160,10 +160,13 @@ img {
 }
 
 .rf-c-site-logo {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding: var(--gutter-lg);
 
     @media (min-width: 800px) {
+        display: block;
         width: auto;
     }
 
@@ -187,9 +190,35 @@ img {
     }
 }
 
+.rf-c-article {
+    display: grid;
+    grid-template-columns: var(--gutter-base) 1fr var(--gutter-base);
+
+    @media (min-width: 800px) {
+        grid-template-columns: auto 40em auto;
+    }
+
+    > section,
+    > div,
+    > h1,
+    > h2,
+    > h3,
+    > h4,
+    > h5,
+    > h6,
+    > p,
+    > ul,
+    > ol,
+    > pre,
+    > img {
+        grid-column: 2/3;
+    }
+}
+
 .rf-c-page-header {
     position: relative;
     margin: var(--gutter-lg) var(--gutter-base) var(--gutter-xl) var(--gutter-base);
+    grid-column: 1/-1;
     padding-bottom: var(--gutter-xl);
     text-align: center;
     
@@ -247,16 +276,35 @@ img {
 }
 
 .rf-c-site-footer {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: var(--gutter-lg);
-    font-size: var(--font-size-sm);
+    flex-direction: column;
+    justify-content: center;
+    margin-top: var(--gutter-xl);
+    padding: var(--gutter-base);
     color: #999;
+    
+    @media (min-width: 800px) {
+        padding: var(--gutter-xl) var(--gutter-base);
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 30vw;
+        border-bottom: 1px solid #ccc;
+        content: '';
+    }
 
     p {
-        margin-top: 0;
-        font-size: var(--font-size-sm);
+        text-align: center;
+
+        @media (min-width: 800px) {
+            font-size: var(--font-size-md);
+        }
     }
 
     a {
@@ -267,13 +315,16 @@ img {
 
 .rf-c-profile-pic {
     display: block;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     background-color: tomato;
     border-radius: 50%;
     
-    @media (min-width: 800px) {
-        width: 20rem;
+    &.rf-c-profile-pic {
+        @media (min-width: 800px) {
+            width: 20rem;
+        }
     }
 }
 
@@ -418,9 +469,14 @@ pre {
  */
 
 .rf-u-container {
-    max-width: 40em;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: var(--gutter-base);
+    margin-left: var(--gutter-base);
+
+    @media (min-width: 800px) {
+        max-width: 40em;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .rf-u-container--full {
