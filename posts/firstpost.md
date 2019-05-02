@@ -1,26 +1,15 @@
 ---
-title: This is my first post.
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
-tags:
-  - another-tag
+title: Hello Internet!
+description: This is my first post whole Internet can see.
+date: 2019-05-01
 layout: layouts/post.njk
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+Hello Internet, this is Zoran writing, long time lurker and reader, first time poster.
 
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+I always wanted to say that... Ever since I was a kid listening to radio talk-shows, there were people calling and starting with *"My name is Yellisaweta, long time listener, first time caller..."*. After 15 years, I got my wish. Such joy, much tears!
 
-## Section Header
+I haven't written something like this since highschool, so bear with me. I'll try to be as short and funny as I can be - so not much.
 
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+Refresh'd is a name I came up with in the middle of last dot com bubble. Yeah, I'm that old. I thought it was cool having one of those names without the last vowel. It wasn't, but it got stuck with me anyway. Since then, I've been trying to do something more than coming up with a semi-cool name, but other stuff got in a way wich I'll tell you some other time. 
 
-``` text/2-3
-// this is a command
-function myCommand() {
-	let counter = 0;
-	counter++;
-}
-
-// Test with a line break above this line.
-console.log('Test');
-```
+Now I'll use this site to share stuff I learn and help others not to make same mistakes I did. With more than 15 years of experience under the hood I've got some advice for you, so stay tuned.
