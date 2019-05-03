@@ -173,7 +173,23 @@ blockquote {
   .rf-c-article > pre,
   .rf-c-article > blockquote,
   .rf-c-article > img {
-    grid-column: 3/4; }
+    grid-column: 2/3; }
+    @media (min-width: 800px) {
+      .rf-c-article > section,
+      .rf-c-article > div,
+      .rf-c-article > h1,
+      .rf-c-article > h2,
+      .rf-c-article > h3,
+      .rf-c-article > h4,
+      .rf-c-article > h5,
+      .rf-c-article > h6,
+      .rf-c-article > p,
+      .rf-c-article > ul,
+      .rf-c-article > ol,
+      .rf-c-article > pre,
+      .rf-c-article > blockquote,
+      .rf-c-article > img {
+        grid-column: 3/4; } }
 
 .rf-c-page-header {
   position: relative;

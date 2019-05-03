@@ -228,7 +228,11 @@ blockquote {
     > pre,
     > blockquote,
     > img {
-        grid-column: 3/4;
+        grid-column: 2/3;
+        
+        @media (min-width: 800px) {
+            grid-column: 3/4;
+        }
     }
 }
 
