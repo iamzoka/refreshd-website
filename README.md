@@ -13,9 +13,13 @@ It appears 11ty can run without it, who new!
 Then, I moved all templates and assets to `src/` for cleaner file tree. Also, started removing stuff from `.eleventy.js`
 I don't need.
 
-One thing I wanted to add was Parcel bundler for bundling styles and JavaScript.
+One thing I wanted to add was Parcel bundler for bundling styles and JavaScript. After deploying refactored version,
+I had to update build command in `netlify.toml` to: `DEBUG=* eleventy && npm run prod:parcel`, so that parcel copies
+bundled files to `_site/`.
 
 Honestly, I thought I'll have to delete everything and start from scratch, but it worked on the first try.
+
+To be continued...
 
 ## To do:
 
