@@ -17,7 +17,6 @@
   justify-content: center;
   margin-top: var(--gutter-xl);
   padding: var(--gutter-lg);
-  color: var(--color-gray-dark);
 
   @media (min-width: 800px) {
     flex-direction: row;
@@ -58,7 +57,7 @@
     }
   }
 
-  .rf-c-icon {
+  .c-icon {
     @media (min-width: 800px) {
       width: var(--font-size-md);
       height: var(--font-size-md);

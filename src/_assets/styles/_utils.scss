@@ -1,11 +1,12 @@
 .u-container {
-  margin-right: var(--gutter-base);
-  margin-left: var(--gutter-base);
+  margin-inline-end: var(--gutter-base);
+  margin-inline-start: var(--gutter-base);
+  margin-block-start: 0;
 
   @media (min-width: 800px) {
     max-width: 40em;
-    margin-right: auto;
-    margin-left: auto;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
   }
 }
 
@@ -14,26 +15,26 @@
   left: 50%;
   right: 50%;
   width: 100vw;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  margin-inline-start: -50vw;
+  margin-inline-end: -50vw;
 }
 
-.rf-u-text--disabled {
+.u-text--disabled {
   color: #ccc;
 }
 
-.rf-u-float--left {
+.u-float--left {
   @media (min-width: 800px) {
     float: left;
-    margin-right: var(--gutter-base);
+    margin-inline-end: var(--gutter-base);
     margin-bottom: var(--gutter-base);
   }
 }
 
-.rf-u-float--right {
+.u-float--right {
   @media (min-width: 800px) {
     float: right;
-    margin-left: var(--gutter-base);
+    margin-inline-start: var(--gutter-base);
     margin-bottom: var(--gutter-base);
   }
 }

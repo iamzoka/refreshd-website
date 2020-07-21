@@ -7,7 +7,7 @@
 
   <nav class="c-site-nav">
     {%- for nav in collections.nav | reverse -%}
-      <a href="{{ nav.url | url }}" {% if nav.url == page.url %} class="is-active"{% endif %}>{{ nav.data.navtitle }}</a>
+      <a href="{{ nav.url | url }}" title="{{ nav.data.navtitle }}" {% if nav.url == page.url %} class="is-active"{% endif %}>{{ nav.data.navtitle }}</a>
     {%- endfor -%}
   </nav>
 </header>

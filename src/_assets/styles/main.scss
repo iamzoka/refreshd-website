@@ -32,11 +32,6 @@
     &.is-active {
       background-size: 100% 100%;
     }
-
-    .c-icon {
-      width: var(--font-size-md);
-      height: var(--font-size-md);
-    }
   }
 }
 
@@ -131,9 +126,7 @@
 }
 
 .c-page-title {
-  @media (min-width: 800px) {
-    font-size: calc(1.5rem + (800px * (3 / 100)));
-  }
+  font-size: clamp(calc(1.5rem + 2vw), calc(2rem + 1vw), 3rem);
 }
 
 .c-posts {
@@ -154,7 +147,7 @@
 }
 
 .c-post__meta {
-  color: var(--color-gray);
+  color: var(--color-gray-dark);
 }
 
 .c-post__desc {
