@@ -1,19 +1,28 @@
 ---
 layout: layouts/base.njk
-templateClass: rf-c-home
+templateClass: p-home
 ---
-<header class="rf-c-page-header">
-    <h1 class="rf-c-page-title">
-        Hey there 👋 I am Zoran, explorer of <a href="#" title="Experiments with user interfaces">layouts</a>,
-        composer of <a href="#" title="#">styles</a>.
-    </h1>
-    <p class="rf-c-post__desc">
-        I am front-end developer at <a href="https://vivifyideas.com" title="VivifyIdeas">VivifyIdeas</a>,
-        teacher at <a href="https://academy.vivifyideas.com" title="VivifyIdeas">VivifyAcademy</a>,
-        occasional wrangler of <a href="{{ metadata.url }}articles" title="Some of the words I've written">words</a> and remote worker.
-    </p>
+
+<header class="c-page-header">
+  <h1 class="c-page-title">
+    Hey there 👋 I am Zoran, explorer of
+    <a href="#" title="Experiments with user interfaces">layouts</a>, composer
+    of <a href="#" title="#">styles</a>.
+  </h1>
+  <p class="c-post__desc">
+    I am front-end developer at
+    <a href="https://vivifyideas.com" title="VivifyIdeas">VivifyIdeas</a>,
+    teacher at
+    <a href="https://academy.vivifyideas.com" title="VivifyIdeas"
+      >VivifyAcademy</a
+    >, occasional wrangler of
+    <a href="{{ metadata.url }}articles" title="Some of the words I've written"
+      >words</a
+    >
+    and remote worker.
+  </p>
 </header>
 
-<main class="rf-u-container">
-    {{ content | safe }}
+<main class="u-container">
+  {{ content | safe }}
 </main>

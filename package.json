@@ -1,23 +1,23 @@
 {
   "name": "refreshd-website",
   "version": "1.0.0",
-  "description": "Home of Zoran Zlokapa",
+  "description": "Personal website of Zoran Zlokapa",
   "scripts": {
     "start": "npm-run-all --parallel dev:*",
     "dev:eleventy": "ELEVENTY_ENV=development eleventy --serve --quiet",
     "dev:parcel": "parcel watch src/_assets/images/* src/_assets/styles/main.scss src/_assets/js/index.js --out-dir _site/assets",
+    "dev:svg": "svg-sprite-generate -d src/_assets/icons -o src/_includes/partials/sprite.svg",
     "build": "run-s prod:*",
     "prod:eleventy": "ELEVENTY_ENV=production eleventy --output=./build",
     "prod:parcel": "parcel build src/_assets/images/*  src/_assets/styles/main.scss src/_assets/js/index.js --out-dir _site/assets",
-    "svg": "svg-sprite-generate -d src/_assets/icons -o src/_includes/partials/sprite.svg",
-    "clean": "rm -rf dist"
+    "prod:svg": "svg-sprite-generate -d src/_assets/icons -o src/_includes/partials/sprite.svg",
+    "clean": "rm -rf _site && rm -rf .cache & rm -rf node_modules && rm package-lock.json"
   },
   "author": {
     "name": "Zoran Zlokapa",
     "email": "z.zoran@gmail.com",
     "url": "https://refreshd.net/"
   },
-  "dependencies": {},
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
@@ -29,7 +29,11 @@
     "node-fetch": "^2.4.0",
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.12.3",
-    "sass": "^1.19.0",
+    "sass": "^1.26.8",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.6.1",
+    "stylelint-prettier": "^1.1.2",
     "svg-sprite-generator": "0.0.7"
-  }
+  },
+  "dependencies": {}
 }

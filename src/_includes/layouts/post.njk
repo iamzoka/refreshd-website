@@ -1,21 +1,24 @@
 ---
 layout: layouts/base.njk
-templateClass: rf-c-page rf-c-post
+templateClass: p-page l-post
 ---
-<article class="rf-c-article">
-    <header class="rf-c-page-header">
-        <h1 class="rf-c-page-title">
-            {{ title }}
-        </h1>
 
-        <p class="rf-c-post__desc">
-            {{ description }}
-        </p>
+<article class="c-article">
+  <header class="c-page-header">
+    <h1 class="c-page-title">
+      {{ title }}
+    </h1>
 
-        <p class="rf-c-post__meta">
-            <time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
-        </p>
-    </header>
+    <p class="c-post__desc">
+      {{ description }}
+    </p>
 
-    {{ content | safe }}
+    <p class="c-post__meta">
+      <time datetime="{{ date | htmlDateString }}">{{
+        date | readableDate
+      }}</time>
+    </p>
+  </header>
+
+  {{ content | safe }}
 </article>
