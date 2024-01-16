@@ -1,31 +1,38 @@
-# Refresh'd
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-My personal website built with 11ty.
+## Getting Started
 
-## 100 Days of code refactor
+First, run the development server:
 
-I've started refactoring 11ty setup on 29-6-2020 as part of my #100daysofcode journey.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-When I first deployed this version of the site, I used some starter kit just to get me going. Now, my idea is to
-get rid of everything non-essential and add just what I want, so I cleaned out `dependencies` from `package.json`.
-It appears 11ty can run without it, who new!
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Then, I moved all templates and assets to `src/` for cleaner file tree. Also, started removing stuff from `.eleventy.js`
-I don't need.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-One thing I wanted to add was Parcel bundler for bundling styles and JavaScript. After deploying refactored version,
-I had to update build command in `netlify.toml` to: `DEBUG=* eleventy && npm run prod:parcel`, so that parcel copies
-bundled files to `_site/`.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-Honestly, I thought I'll have to delete everything and start from scratch, but it worked on the first try.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-To be continued...
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## To do:
+## Learn More
 
-- [x] Clean out project repo
-- [x] Implement bundling with Parcel
-- [x] Remove everything non-essential
-- [x] Clean out `eleventy.js`
-- [x] Add SVG sprite generator
-- [ ] Write an article about this refactor
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
